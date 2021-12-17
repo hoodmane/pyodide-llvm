@@ -1,0 +1,7 @@
+.docker_home
+binaryen
+emscripten
+*.a
+*.o
+*.wasm
+passes/build
