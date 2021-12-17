@@ -8,7 +8,7 @@ RUN apt-get update \
   && wget https://apt.llvm.org/llvm.sh \
   && chmod +x llvm.sh \
   && ./llvm.sh 13 \
-  && apt-get install -y libclang-13-dev lld-13 nodejs zlib1g-dev \
+  && apt-get install -y libclang-13-dev lld-13 zlib1g-dev \
   && rm -rf /var/lib/apts/lists/*
 
 ENV PATH="/usr/lib/llvm-13/bin:/src/.docker_home/.local/bin:${PATH}"
